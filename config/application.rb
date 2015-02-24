@@ -31,6 +31,9 @@ module Project517
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.assets.enabled = true
+    config.assets.initialize_on_precompile = false
+    config.action_controller.assets_dir = "#{File.dirname(File.dirname(__FILE__))}/public"
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
