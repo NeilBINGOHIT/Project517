@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
-  resources :stories
-
   resources :projects
 
   root to: 'visitors#index'
-  get '/stories/:id', to 'stories#show', as 'story'
+
+
+  resources :stories
+  get '/stories/index' => 'stories#index'#, :as => :stories_index
 
   devise_for :users
   resources :users

@@ -7,3 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
+
+
+compile = Story.create(:name =>'bingohit')
+compile123 = Story.create(:name =>'basdf')
+

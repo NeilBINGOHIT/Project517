@@ -1,9 +1,10 @@
 class User < ActiveRecord::Base
-  enum role: [:user, :vip, :admin]
+  #based on Pundit	
+  enum role: [:admin, :developer]
   after_initialize :set_default_role, :if => :new_record?
 
   def set_default_role
-    self.role ||= :user
+    self.role ||= :developer
   end
 
   # Include default devise modules. Others available are:

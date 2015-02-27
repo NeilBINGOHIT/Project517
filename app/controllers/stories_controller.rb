@@ -21,6 +21,11 @@ class StoriesController < ApplicationController
   def edit
   end
 
+  def assign
+  end
+
+  def search
+  end
   # POST /stories
   # POST /stories.json
   def create
@@ -69,6 +74,6 @@ class StoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def story_params
-      params[:story]
+      params.require(:story).permit(:name, :description, :points, :stage, :users, :project)
     end
 end
