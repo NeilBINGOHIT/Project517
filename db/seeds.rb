@@ -5,10 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-user = CreateAdminService.new.call
-puts 'CREATED ADMIN USER: ' << user.email
 
 
-compile = Story.create(:name =>'bingohit')
-compile123 = Story.create(:name =>'basdf')
+#user = CreateAdminService.new.call
+#puts 'CREATED ADMIN USER: ' << user.email
 
+
+#compile = Story.create(:name =>'bingohit')
+#compile123 = Story.create(:name =>'basdf')
+#puts 'CREATED Story: ' << compile123.name
+
+#pj1 = Project.create(:name =>'wow', :description => "google")
+#puts 'CREATED Project: ' << pj1.name

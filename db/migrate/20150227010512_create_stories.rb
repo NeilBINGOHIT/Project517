@@ -5,8 +5,8 @@ class CreateStories < ActiveRecord::Migration
 	  t.text :description
 	  t.integer :points, default: 0
 	  t.integer :stage, default: 0
-	  t.reference :user
-	  t.reference :project
+	  t.references :user
+	  t.references :project
 	  
       t.timestamps null: false
     end

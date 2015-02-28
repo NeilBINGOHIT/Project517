@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    #flash[:success] = @user.role
     authorize @user
   end
 
